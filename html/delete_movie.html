@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Movie - Movie Rental Web App</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admin.html">Admin Dashboard</a></li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="delete-movie">
+      <h1>Delete Movie</h1>
+      <form id="deleteMovieForm" action="delete_movie.php" method="post">
+        <input type="hidden" id="movieId" name="movieId">
+        <p>Are you sure you want to delete the movie "<span id="movieTitle"></span>"?</p>
+        <button type="submit">Delete Movie</button>
+        <a href="admin.html" class="btn">Cancel</a>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Movie Rental Web App. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/delete_movie.js"></script>
+</body>
+</html>

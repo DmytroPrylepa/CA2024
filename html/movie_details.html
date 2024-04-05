@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Details - Movie Rental Web App</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="movie-details">
+      <h1 id="movieTitle"></h1>
+      <img id="movieImage" src="" alt="">
+      <p><strong>Genre:</strong> <span id="movieGenre"></span></p>
+      <p><strong>Release Date:</strong> <span id="movieReleaseDate"></span></p>
+      <p><strong>Director:</strong> <span id="movieDirector"></span></p>
+      <p><strong>Cast:</strong> <span id="movieCast"></span></p>
+      <p id="movieDescription"></p>
+      <a href="booking.html?id=1" class="btn">Book Now</a>
+      <a href="booked_movies.html" class="btn">View Bookings</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Movie Rental Web App. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/movie_details.js"></script>
+</body>
+</html>
